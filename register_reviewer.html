@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Revie | Reseñas de restaurantes</title>
+    <meta name="theme-color" content="#008cff">
+    <meta property="og:image" content="https://www.revie.com/assets/img/LogoCLSB/Proyecto Ingenieria web redes.png">
+    <meta name="description" content="En revie encontraras los mejores restaurantes de tu localidad, tendrás muchas categorías para elegir y el que mas te gusta, podrás contribuir a dándonos tu opinión para que mas personas te conozcan y conozcan tu experiencia.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="24x24" href="assets/img/LogoCLSB/Proyecto%20Ingenieria%20web%20-%20CLS%20XS.png">
+    <link rel="icon" type="image/png" sizes="2569x1174" href="assets/img/LogoCLSB/Proyecto%20Ingenieria%20web%20redes.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/LogoCLSB/Proyecto%20Ingenieria%20web%20-%20CLS%20L.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/lux/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/register.compiled.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/windows_emer.css">
+</head>
+
+<body onload="hide_div()">
+    <header>
+        <!-- Start: windows_emer -->
+        <div id="elegir" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" value="Recuperar contraseña">Elegir usuario</h5><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Elige entre ser reseñador o restaurante</h6>
+                        <div class="conten_register"><a href="register_reviewer.html"><button class="btn btn-primary buton buton_re" type="button"><i class="material-icons icon_register">person</i></button></a><a href="register_restaurant.html"><button class="btn btn-primary buton buton_re" type="button"><i class="material-icons icon_register">restaurant</i></button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End: windows_emer -->
+        <!-- Start: Navigation with Button -->
+        <nav class="navbar navbar-light navbar-expand-xl navigation-clean-button fixed-top bg-light py-1 border-0">
+            <div class="container"><a class="navbar-brand conten_nav" href="index.html"><img class="logo_nav" src="assets/img/LogoCLSB/logo-nav.png"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-2">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link nav_web" href="index.html"><span class="span_nav">Inicio</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="restaurant.html"><span class="span_nav">Restaurantes</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="top.html"><span class="span_nav">Top revie</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="span_nav">Quienes Somos</span></a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" target="_parent">cuenta<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person ms-2 me-2" style="transform: translate(0px) scale(1.70);">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
+                                </svg></a>
+                            <div class="dropdown-menu"><a class="dropdown-item span_nav" href="#" style="font-size: 80%;">PERFIL</a><a class="dropdown-item span_nav" href="#" style="font-size: 80%;">CERRAR SESION</a></div>
+                        </li>
+                    </ul><span class="navbar-text actions"> <a class="stretched-link buton-outline login" href="login.html" role="button"><span class="link">Iniciar sesion</span></a><button class="btn btn-primary buton" type="button" data-bs-toggle="modal" data-bs-target="#elegir">Registrarse</button></span>
+                </div>
+            </div>
+        </nav><!-- End: Navigation with Button -->
+    </header>
+    <section class="mt-5 pt-5">
+        <article class="conten_info_register">
+            <form id="form_regis" class="needs-validation" action="index.html" method="post" target="_self" enctype="application/x-www-form-urlencoded" novalidate="">
+                <div id="register_reviewer" class="all_info">
+                    <div id="basica" class="info_basic">
+                        <h3 class="text-center heading_regis">Informacion basica</h3>
+                        <div class="compar">
+                            <div class="input-group input-group-sm mb-3"><input class="form-control form-control-sm input_register" type="text" placeholder="Carlos" autocomplete="on" name="fname" required=""><span id="basic-addon1" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Nombre</span><div class="invalid-tooltip">
+Ingrese un nombre valido!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                            <div class="input-group input-group-sm mb-3"><input class="form-control form-control-sm input_register" type="text" placeholder="Amaya" autocomplete="on" name="lname" required=""><span id="basic-addon-1" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Apellido</span><div class="invalid-tooltip">
+Ingrese un apellido valido!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                        </div>
+                        <div class="input-group input-group-sm mb-3"><span id="basic-addon-2" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Correo</span><input class="form-control form-control-sm input_register" type="email" placeholder="ejemplo@gmail.com" autocomplete="on" name="email" required=""><div class="invalid-tooltip">
+Ingrese un correo valido!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                        <div class="input-group input-group-sm mb-3"><input class="form-control form-control-sm input_register" type="password" id="password2" placeholder="1*dS******" name="password" required=""><span id="basic-addon-3" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Contraseña</span><div class="invalid-tooltip">
+Ingrese una constraseña valida!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                        <div class="input-group input-group-sm mb-3"><span id="basic-addon-4" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Confirmación</span><input class="form-control form-control-sm input_register" type="password" id="password1" placeholder="1*dS******" name="password" required=""><div class="invalid-tooltip">
+Ingrese una contraseña valida!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                        <div class="input-group input-group-sm mb-3"><input class="form-control form-control-sm input_register" type="tel" placeholder="3000000000" name="telephone" required=""><span id="basic-addon-6" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Teléfono</span><div class="invalid-tooltip">
+Ingrese un telefono valido!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                        <div class="compar">
+                            <div class="input-group input-group-sm mb-3"><span id="basic-addon-5" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Edad</span><input class="form-control form-control-sm input_register" type="number" placeholder="12" name="age" required=""><div class="invalid-tooltip">
+Ingrese una valida valido!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                            <div class="input-group input-group-sm mb-3"><span id="basic-addon-7" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Sexo</span><select class="form-select form-select-sm" placeholder="sexo" required value="sexo">
+	      <option selected disabled value="">Sexo</option>
+        <option value="M">M</option>
+        <option value="T">T</option>
+        <option value="F">F</option>
+</select><div class="invalid-tooltip">
+Seleccione un sexo valido!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                        </div>
+                    </div>
+                    <div id="complementaria" class="info_comple">
+                        <h3 class="text-center heading_regis">Informacion Complementaria</h3>
+                        <div class="input-group input-group-sm mb-3"><span id="basic-addon-8" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Fotografia</span><input class="form-control" type="file" accept="image/jpg, image/jpeg, image/png"></div>
+                        <div id="descrip" class="input-group input-group-sm mb-3"><textarea class="form-control input_des" row="1"></textarea><span class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Descripccion</span></div>
+                        <div class="conten_buton" style="text-align: right;"><button class="btn btn-primary buton" id="envio" type="submit" style="text-align: right;">Registrar</button></div>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </section>
+    <footer>
+        <!-- Start: Footer Dark -->
+        <footer id="footer" class="footer-dark">
+            <div class="container" id="container-footer">
+                <div class="row">
+                    <!-- Start: Services -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 class="text-capitalize heading_footer">Servicios</h3>
+                        <ul>
+                            <li><a href="restaurant.html">Restaurantes</a></li>
+                            <li><a href="top.html">Top Revie</a></li>
+                            <li></li>
+                        </ul>
+                    </div><!-- End: Services -->
+                    <!-- Start: About -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 class="text-capitalize heading_footer">Acerca</h3>
+                        <ul>
+                            <li><a href="aboutus.html">Quienes somos</a></li>
+                            <li><a href="#">Mapa del sitio</a></li>
+                            <li></li>
+                        </ul>
+                    </div><!-- End: About -->
+                    <!-- Start: Footer Text -->
+                    <div class="col-md-6 item text">
+                        <div class="d-inline-flex flex-row flex-grow-1 div_logo_footer_interno"><img class="image-revie-footer" src="assets/img/LogoEG/Proyecto%20Ingenieria%20web%20-%20EGS%20S.png">
+                            <h4 class="display-6 text-capitalize heading_footer">revie</h4>
+                        </div>
+                        <p>Nosotros te ayudaremos en la dicifil desicion de encontrar un buen restaturante, con la mejor comida de tu localidad</p>
+                    </div><!-- End: Footer Text -->
+                    <!-- Start: Social Icons -->
+                    <div class="col item social"><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div><!-- End: Social Icons -->
+                </div><!-- Start: Copyright -->
+                <p class="copyright">Revie © 2021</p><!-- End: Copyright -->
+            </div>
+        </footer><!-- End: Footer Dark -->
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/java.js"></script>
+    <script src="assets/js/validation-form.js"></script>
+</body>
+
+</html>

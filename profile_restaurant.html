@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Revie | Reseñas de restaurantes</title>
+    <meta name="theme-color" content="#008cff">
+    <meta property="og:image" content="https://www.revie.com/assets/img/LogoCLSB/Proyecto Ingenieria web redes.png">
+    <meta name="description" content="En revie encontraras los mejores restaurantes de tu localidad, tendrás muchas categorías para elegir y el que mas te gusta, podrás contribuir a dándonos tu opinión para que mas personas te conozcan y conozcan tu experiencia.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="24x24" href="assets/img/LogoCLSB/Proyecto%20Ingenieria%20web%20-%20CLS%20XS.png">
+    <link rel="icon" type="image/png" sizes="2569x1174" href="assets/img/LogoCLSB/Proyecto%20Ingenieria%20web%20redes.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/LogoCLSB/Proyecto%20Ingenieria%20web%20-%20CLS%20L.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/lux/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/profile_restaurant.compiled.css">
+    <link rel="stylesheet" href="assets/css/register.compiled.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/windows_emer.css">
+</head>
+
+<body>
+    <header>
+        <!-- Start: windows_emer -->
+        <div id="elegir" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" value="Recuperar contraseña">Elegir usuario</h5><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Elige entre ser reseñador o restaurante</h6>
+                        <div class="conten_register"><a href="register_reviewer.html"><button class="btn btn-primary buton buton_re" type="button"><i class="material-icons icon_register">person</i></button></a><a href="register_restaurant.html"><button class="btn btn-primary buton buton_re" type="button"><i class="material-icons icon_register">restaurant</i></button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End: windows_emer -->
+        <!-- Start: Navigation with Button -->
+        <nav class="navbar navbar-light navbar-expand-xl navigation-clean-button fixed-top bg-light py-1 border-0">
+            <div class="container"><a class="navbar-brand conten_nav" href="index.html"><img class="logo_nav" src="assets/img/LogoCLSB/logo-nav.png" alt="logo revie"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-2">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link nav_web" href="index.html"><span class="span_nav">Inicio</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="restaurant.html"><span class="span_nav">Restaurantes</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="top.html"><span class="span_nav">Top revie</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="span_nav">Quienes Somos</span></a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" target="_parent">cuenta<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person ms-2 me-2" style="transform: translate(0px) scale(1.70);">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
+                                </svg></a>
+                            <div class="dropdown-menu"><a class="dropdown-item span_nav" href="profile_restaurant.html" style="font-size: 80%;">PERFIL</a><a class="dropdown-item span_nav" href="#" style="font-size: 80%;" data-bs-toggle="modal" data-bs-target="#FRegistercc">CAMBIAR CONTRASEÑA</a><a class="dropdown-item span_nav" href="index.html" style="font-size: 80%;">CERRAR SESION</a></div>
+                        </li>
+                    </ul><span class="navbar-text actions"> <a class="stretched-link buton-outline login" href="login.html" role="button"><span class="link">Iniciar sesion</span></a><button class="btn btn-primary buton" type="button" data-bs-toggle="modal" data-bs-target="#elegir">Registrarse</button></span>
+                </div>
+            </div>
+        </nav><!-- End: Navigation with Button -->
+    </header>
+    <section class="mt-5 pt-5">
+        <div class="container conta-res">
+            <div class="d-flex mt-1 mb-3 fw-bold">
+                <!-- Start: emer-form -->
+                <div id="FRegister" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <form class="needs-validation" method="post" target="_self" enctype="application/x-www-form-urlencoded" novalidate="">
+                                <div class="modal-header">
+                                    <h3 class="text-center modal-title">Informacion&nbsp;</h3><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group input-group-sm mb-3 has-validation"><span class="input-group-text" aria-label="Username">Razon social</span><input class="form-control form-control-sm input_register" type="text" data-bs-toggle="tooltip" data-bss-tooltip="" placeholder="Comidas y mas" autocomplete="on" name="fname" required="" title="razon soscial"><div class="invalid-tooltip">
+Ingrese una razon social valida!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                                    <div class="input-group input-group-sm mb-3"><input class="form-control form-control-sm input_register" type="text" placeholder="900.000.000" autocomplete="on" name="nit" required=""><span id="basic-addon-1" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Nit</span><div class="invalid-tooltip">
+Ingrese un Nit valido!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                                    <div class="input-group input-group-sm mb-3"><span id="basic-addon-2" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Correo</span><input class="form-control form-control-sm input_register" type="email" placeholder="ejemplo@gmail.com" autocomplete="on" name="email" required=""><div class="invalid-tooltip">
+Ingrese un correo valido!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                                    <div class="input-group input-group-sm mb-3"><input class="form-control form-control-sm input_register" type="password" placeholder="1*dS******" name="password" required=""><span id="basic-addon-3" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Contraseña</span><div class="invalid-tooltip">
+Ingrese una contraseña valida!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                                    <div class="input-group input-group-sm mb-3"><span id="basic-addon-6" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Teléfono</span><input class="form-control form-control-sm input_register" type="tel" placeholder="3000000000" name="telephone" required="" inputmode="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"><div class="invalid-tooltip">
+Ingrese un telefono valido!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <!-- Start: 1 Row 2 Columns -->
+                                        <div class="container-fluid form-control">
+                                            <div class="row mw-80">
+                                                <div class="col-4 col-md-6 col-xxl-4 offset-xxl-0 btn-group d-flex flex-column" role="group" aria-label="Basic checkbox toggle button group"><input type="checkbox" id="btncheck1" class="btn-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck1">Internacional</label><input type="checkbox" id="btncheck2" class="btn-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck2">asiatica</label><input type="checkbox" id="btncheck3" class="btn-check buton-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck3">comida rapida</label><input type="checkbox" id="btncheck12" class="btn-check buton-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck12">buffet</label></div>
+                                                <div class="col-md-6 col-xxl-4 btn-group d-flex flex-column" role="group" aria-label="Basic checkbox toggle button group"><input type="checkbox" id="btncheck4" class="btn-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck4">Bar</label><input type="checkbox" id="btncheck5" class="btn-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck5">mariscos</label><input type="checkbox" id="btncheck6" class="btn-check buton-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck6">Internacional</label><input type="checkbox" id="btncheck11" class="btn-check buton-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck11">asadero de pollo</label></div>
+                                                <div class="col-9 col-xxl-4"><input type="checkbox" id="btncheck7" class="btn-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck7">mexicana</label><input type="checkbox" id="btncheck8" class="btn-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck8">tematicos</label><input type="checkbox" id="btncheck9" class="btn-check buton-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck9">gourtmet</label><input type="checkbox" id="btncheck10" class="btn-check buton-check" autocomplete="off"><label class="form-label btn btn-outline-primary buton-outline" for="btncheck10">asadero de carne</label></div>
+                                            </div>
+                                        </div><!-- End: 1 Row 2 Columns --><span id="basic-addon-7" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">categoria</span>
+                                    </div><!-- Start: url -->
+                                    <div class="input-group input-group-sm mb-3"><span id="basic-addon-4" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Pagina web</span><input class="form-control" type="url" placeholder="www.ejemplo.com"></div><!-- End: url -->
+                                    <div id="descrip" class="input-group input-group-sm mb-3"><textarea class="form-control input_des" row="1"></textarea><span class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Descripccion</span></div><!-- Start: map -->
+                                    <div class="input-group input-group-sm mb-3"><span id="basic-addon-8" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Ubicacion</span><input class="form-control input_register" type="text"></div><!-- End: map --><iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCe15p2NUua5KzN7qBtn5z8mVTDvz4QHXw&amp;q=villavicencio%2C+meta&amp;zoom=11" width="100%" height="400" style="height: 248px;"></iframe>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-primary buton" type="submit">Enviar</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- End: emer-form -->
+                <!-- Start: emer-photos -->
+                <div id="FRegisterc" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <form method="post" target="_self" enctype="application/x-www-form-urlencoded">
+                                <div class="modal-header"><h3 class="text-center modal-title heading_regis">Cambio de imagenes</h3><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                <div class="modal-body conten_image_card1">
+                                    <!-- Start: Card-figo-class-medal -->
+                                    <div id="Card-figo" class="conten_image_card1 d-flex flex-column m-0">
+                                        <div class="conten_image_xl1 m-0">
+                                            <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="50" data-aos-once="true" class="image_xl1 rounded-3">
+                                                <h1 class="display-1 photo-1">1</h1>
+                                            </div>
+                                            <div class="conten_image_l1">
+                                                <div class="align-items-center image_l1 rounded-3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150" data-aos-once="true">
+                                                    <h1 class="display-1 photo-2">2</h1>
+                                                </div>
+                                                <div class="conten_image_m1">
+                                                    <div class="conten_image_s1">
+                                                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="450" data-aos-once="true" class="image_s_d1 rounded-3">
+                                                            <h1 class="display-1 photo-5">5</h1>
+                                                        </div>
+                                                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="350" data-aos-once="true" class="image_s_i1 rounded-3">
+                                                            <h1 class="display-1 photo-4">4</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" data-aos-once="true" class="image_m1 rounded-3">
+                                                        <h1 class="display-1 photo-3">3</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-center heading_regis">CArgue fotografias</h3>
+                                            <div class="input-group input-group-sm mb-3"><span id="basic-addon-5" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">1</span><input class="form-control" type="file" multiple="" accept="image/jpg, image/jpeg, image/png"></div>
+                                            <div class="input-group input-group-sm mb-3"><span id="basic-addon-9" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">2</span><input class="form-control" type="file" multiple="" accept="image/jpg, image/jpeg, image/png"></div>
+                                            <div class="input-group input-group-sm mb-3"><span id="basic-addon-10" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">3</span><input class="form-control" type="file" multiple="" accept="image/jpg, image/jpeg, image/png"></div>
+                                            <div class="input-group input-group-sm mb-3"><span id="basic-addon-11" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">4</span><input class="form-control" type="file" multiple="" accept="image/jpg, image/jpeg, image/png"></div>
+                                            <div class="input-group input-group-sm mb-3"><span id="basic-addon-12" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">5</span><input class="form-control" type="file" multiple="" accept="image/jpg, image/jpeg, image/png"></div>
+                                        </div>
+                                    </div><!-- End: Card-figo-class-medal -->
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-primary buton" type="submit">Enviar</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- End: emer-photos -->
+                <!-- Start: emer-pass -->
+                <div id="FRegistercc" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <form class="needs-validation" novalidate="">
+                                <div class="modal-header"><h3 class="text-center modal-title heading_regis">Cambio de contraseña</h3><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                <div class="modal-body d-flex flex-column">
+                                    <div class="input-group input-group-sm mb-3"><input class="form-control form-control-sm input_register" type="password" id="password3" placeholder="1*dS******" name="password" required=""><span id="basic-addon" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Contraseña vieja</span><div class="invalid-tooltip">
+Ingrese una contraseña valida!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                                    <div class="input-group input-group-sm mb-3"><span id="basic-addon-14" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Contraseña nueva</span><input class="form-control form-control-sm input_register" type="password" id="password1" placeholder="1*dS******" name="password1" required=""><div class="invalid-tooltip">
+Ingrese una contraseña valida!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                                    <div class="input-group input-group-sm mb-3"><input class="form-control form-control-sm input_register" type="password" id="password2" placeholder="1*dS******" name="password2" required=""><span id="basic-addon-15" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Confirmar</span><div class="invalid-tooltip">
+Ingrese una contraseña valida!
+</div><div class="valid-tooltip">
+Excelente!
+</div></div>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-primary buton" id="envio" type="submit">Enviar</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- End: emer-pass -->
+                <h1>la cofradia mediterranea</h1>
+                <div class="d-flex flex-row buton-prin"><button class="btn btn-primary buton ms-2 mb-2" data-bs-toggle="modal" data-bss-tooltip="" type="button" data-bs-target="#FRegister" title="Editar informacion"><i class="far fa-edit ico1" style="transform: scale(1.55);"></i></button><button class="btn btn-primary buton ms-2 mb-2" data-bs-toggle="modal" data-bss-tooltip="" type="button" data-bs-target="#FRegisterc" title="Editar imagenes"><i class="far fa-images ico2" style="transform: scale(1.55);"></i></button></div>
+            </div>
+            <div class="conten-sub">
+                <div class="conten-xl-res">
+                    <!-- Start: Modal-XL -->
+                    <div id="ModalXL" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/2020-10-23.jpg"></div>
+                            </div>
+                        </div>
+                    </div><!-- End: Modal-XL -->
+                    <!-- Start: Modal-L -->
+                    <div id="ModalL" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/reservas-3152973034-en.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="modal-dialog modal">
+                            <div class="modal-content">
+                                <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                <div class="modal-body"><img src="assets/img/Restaurant/reservas-3152973034-en.jpg"></div>
+                            </div>
+                        </div>
+                    </div><!-- End: Modal-L -->
+                    <!-- Start: Modal-M -->
+                    <div id="ModalM" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/reserva-tu-cena-romantica.jpg"></div>
+                            </div>
+                        </div>
+                    </div><!-- End: Modal-M -->
+                    <!-- Start: Modal-S1 -->
+                    <div id="ModalS1" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/cofradia-campestre-2_10_109620.jpeg"></div>
+                            </div>
+                        </div>
+                    </div><!-- End: Modal-S1 -->
+                    <!-- Start: Modal-S2 -->
+                    <div id="ModalS2" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/la-cofradia-mediterranea.jpg"></div>
+                            </div>
+                        </div>
+                    </div><!-- End: Modal-S2 -->
+                    <div class="img-xl-res" data-bs-toggle="modal" data-bs-target="#ModalXL">
+                        <figure class="figure"><img class="figure-img rounded-3" src="assets/img/Restaurant/2020-10-23.jpg"></figure>
+                    </div>
+                    <div class="conten-l-res">
+                        <div class="img-l-res" data-bs-toggle="modal" data-bs-target="#ModalL">
+                            <figure class="figure"><img class="figure-img rounded-3" src="assets/img/Restaurant/reservas-3152973034-en.jpg"></figure>
+                        </div>
+                        <div class="conten-m-res">
+                            <div class="conten-s-res">
+                                <div class="img-s-res" data-bs-toggle="modal" data-bs-target="#ModalS2">
+                                    <figure class="figure"><img class="figure-img rounded-3" src="assets/img/Restaurant/la-cofradia-mediterranea.jpg"></figure>
+                                </div>
+                                <div class="img-s-res" data-bs-toggle="modal" data-bs-target="#ModalS1">
+                                    <figure class="figure"><img class="figure-img rounded-3" src="assets/img/Restaurant/cofradia-campestre-2_10_109620.jpeg"></figure>
+                                </div>
+                            </div>
+                            <div class="img-m-res" data-bs-toggle="modal" data-bs-target="#ModalM">
+                                <figure class="figure"><img class="figure-img rounded-3" src="assets/img/Restaurant/reserva-tu-cena-romantica.jpg"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conten-info-basic-res mt-xl-3 mb-xl-4 mt-lg-2 mb-lg-4 mt-md-2 mb-md-2 mt-sm-3 mt-xs-3 rounded-3 border border-1">
+                    <div>
+                        <h5>categoria</h5><span>Bar de vinos, Mariscos, Internacional<br></span>
+                    </div>
+                    <div>
+                        <h5>telefono</h5><span>3057119562</span>
+                    </div>
+                    <div>
+                        <h5>pagina web</h5><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-laptop" style="transform: scale(2);">
+                                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"></path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-up-right" style="transform: scale(2);">
+                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="conten-info-res">
+                <div class="conten-res rounded-3 border border-1">
+                    <h3>informacion</h3>
+                    <h5>Descripcion</h5><!-- Start: Lorem1 --><p id="lorem"> Está pensado para albergar pequeñas celebraciones o comidas de empresa, con una capacidad de hasta ochenta personas. Además dispone de proyector y pantalla lo que posibilita su utilización para presentaciones y eventos similares.
+El local, inaugurado en el verano de 2004, ofrece cocina tradicional con toques de modernidad. El restaurante aprovecha los productos de la zona ( excelentes carnes, salazones, pulpo, productos de la huerta, pescados de la cercana ría de Vigo…) combinándolos con nuevos sabores y texturas..</p><!-- End: Lorem1 -->
+                    <h5>ubicacion</h5><iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCe15p2NUua5KzN7qBtn5z8mVTDvz4QHXw&amp;location=4.133472409083794%2C+-73.63420961802721" width="100%" height="400"></iframe>
+                </div>
+                <div class="conten-review mb-3 rounded-3 border border-1">
+                    <div>
+                        <!-- Start: create review -->
+                        <div id="review-rese" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <form method="post" target="_self" enctype="application/x-www-form-urlencoded">
+                                        <div class="modal-header">
+                                            <h3 class="text-center modal-title">Reseñar</h3><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Start: scores -->
+                                            <div class="col-xl-10 col-sm-12">
+                                                <div class="text-center text-primary conten-rev mb-4">
+                                                    <h5 class="h1-revs">Comida</h5><div class="d-grid w-100 align-items-center">
+    <input class="form-range  slider" type="range" min="0" max="5" step="1" name="Comida" value="5" required />
+</div>
+                                                </div>
+                                                <div class="text-center text-primary conten-rev mb-4">
+                                                    <h5 class="h1-revs">Calidad /precio</h5><div class="d-grid w-100 align-items-center">
+    <input class="form-range  slider" type="range" min="0" max="5" step="1" name="Comida" value="5" required />
+</div>
+                                                </div>
+                                                <div class="text-center text-primary conten-rev mb-4">
+                                                    <h5 class="h1-revs">ATENCION</h5><div class="d-grid w-100 align-items-center">
+    <input class="form-range  slider" type="range" min="0" max="5" step="1" name="Comida" value="5" required />
+</div>
+                                                </div>
+                                                <div class="text-center text-primary conten-rev mb-4">
+                                                    <h5 class="h1-revs">AMBIENTE</h5><div class="d-grid w-100 align-items-center">
+    <input class="form-range  slider" type="range" min="0" max="5" step="1" name="Comida" value="5" required />
+</div>
+                                                </div>
+                                            </div><!-- End: scores -->
+                                            <!-- Start: title -->
+                                            <div class="input-group input-group-sm mb-3 has-validation"><span class="input-group-text" aria-label="Username">Titulo</span><input class="form-control form-control-sm input_register" type="text" data-bs-toggle="tooltip" data-bss-tooltip="" placeholder="Comidas y mas" autocomplete="on" name="fname" title="razon soscial"></div><!-- End: title -->
+                                            <div id="descrip-1" class="input-group input-group-sm mb-3"><textarea class="form-control input_des" row="1"></textarea><span class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Descripccion</span></div>
+                                            <div class="input-group input-group-sm mb-3"><span id="basic-addon-13" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Foto 1</span><input class="form-control" type="file" multiple="" accept="image/jpg, image/jpeg, image/png"></div>
+                                            <div class="input-group input-group-sm mb-3"><input class="form-control" type="file" multiple="" accept="image/jpg, image/jpeg, image/png"><span id="basic-addon-13" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Foto 2</span></div>
+                                            <div class="input-group input-group-sm mb-3"><span id="basic-addon-13" class="input-group-text" aria-label="Username" aria-describedby="basic-addon1">Foto 3</span><input class="form-control" type="file" multiple="" accept="image/jpg, image/jpeg, image/png"></div>
+                                        </div>
+                                        <div class="modal-footer"><button class="btn btn-primary buton" type="submit">Enviar</button></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- End: create review -->
+                        <h3>reseñas</h3>
+                        <h1 class="display-6" style="color: #008cff;font-weight: bold;">50 reseñas (3.5)</h1>
+                        <div class="d-grid justify-items-end mt-4 mb-4">
+                            <div class="fs-5 fw-light text-end conten-rev">
+                                <h6 class="h1-rev">Comida</h6>
+                                <div class="conten-star-ref"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png"></div>
+                            </div>
+                            <div class="text-end conten-rev">
+                                <h5 class="h1-revs">Calidad /precio</h5>
+                                <div class="conten-star-ref"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png"></div>
+                            </div>
+                            <div class="text-end conten-rev">
+                                <h4 class="h1-rev">atencion</h4>
+                                <div class="conten-star-ref"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png"></div>
+                            </div>
+                            <div class="text-end conten-rev">
+                                <h4 class="h1-rev">ambiente</h4>
+                                <div class="conten-star-ref"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20verde%20-xs.png"><img class="image_medal_about" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png"></div>
+                            </div>
+                        </div><button class="btn btn-primary buton ms-2 mb-2" data-bs-toggle="modal" data-bss-tooltip="" type="button" data-bs-target="#review-rese" title="Agregar reseña"><i class="fas fa-pencil-alt me-3"></i><span data-bs-toggle="tooltip" data-bss-tooltip="">Reseñar</span></button>
+                    </div><!-- Start: reviews -->
+                    <div class="review">
+                        <div class="conten-ref-princi rounded-3 border border-1">
+                            <!-- Start: review1 -->
+                            <div id="Review1" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                        <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/reserva-tu-cena-romantica.jpg"></div>
+                                    </div>
+                                </div>
+                            </div><!-- End: review1 -->
+                            <!-- Start: review2 -->
+                            <div id="Review2" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                        <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/cofradia-campestre-2_10_109620.jpeg"></div>
+                                    </div>
+                                </div>
+                            </div><!-- End: review2 -->
+                            <!-- Start: review3 -->
+                            <div id="Review3" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                                        <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/la-cofradia-mediterranea.jpg"></div>
+                                    </div>
+                                </div>
+                            </div><!-- End: review3 -->
+                            <div class="d-flex flex-row" style="padding-top: 5px;padding-left: 4px;"><img class="rounded-circle" src="assets/img/profile/profile2.jpg" width="70px" height="70px" style="width: 55px;height: 55px;">
+                                <div style="margin: 0px;margin-top: 0px;margin-right: 0px;margin-left: 14px;">
+                                    <h5>CARLOS AMAYA<br></h5><span style="font-size: 13px;">12 de enero</span>
+                                </div>
+                            </div>
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: 20px;margin-bottom: 10px;">
+                                <div class="carousel-indicators"><button class="btn btn-primary active" type="button" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" data-bs-target="#carouselExampleIndicators"></button><button class="btn btn-primary" type="button" data-bs-slide-to="1" aria-label="Slide 2" data-bs-target="#carouselExampleIndicators"></button><button class="btn btn-primary" type="button" data-bs-slide-to="2" aria-label="Slide 3" data-bs-target="#carouselExampleIndicators"></button></div>
+                                <div class="carousel-inner rounded-3">
+                                    <div class="carousel-item active rounded-3" style="height:250px;" data-bs-toggle="modal" data-bs-target="#Review1"><img class="img-fluid d-block w-100 image rounded-3" src="assets/img/Restaurant/reserva-tu-cena-romantica.jpg"></div>
+                                    <div class="carousel-item image rounded-3" style="height:250px;" data-bs-toggle="modal" data-bs-target="#Review2"><img class="img-fluid d-block w-100 image image rounded-3" src="assets/img/Restaurant/cofradia-campestre-2_10_109620.jpeg"></div>
+                                    <div class="carousel-item image rounded-3" style="height:250px;" data-bs-toggle="modal" data-bs-target="#Review3"><img class="img-fluid d-block w-100 image image rounded-3" src="assets/img/Restaurant/la-cofradia-mediterranea.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="conten-star"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="550" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="600" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="650" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="700" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="750" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png" style="padding: 0px;margin: 3px;"></div>
+                            <div style="padding-left: 10px;padding-right: 5px;">
+                                <h4>comida deliciosa</h4>
+                                <p style="font-size: 23px;">La comida muy rica&nbsp; y un lugar muy amigable con sus invitados&nbsp;</p>
+                            </div><a class="text-decoration-none" href="#"></a>
+                        </div>
+                        <div class="conten-ref-princi border border-1 rounded-3">
+                            <div class="d-flex flex-row" style="padding-top: 5px;padding-left: 4px;"><img class="rounded-circle" src="assets/img/profile/profile2.jpg" width="70px" height="70px" style="width: 55px;height: 55px;">
+                                <div style="margin: 0px;margin-top: 0px;margin-right: 0px;margin-left: 14px;">
+                                    <h5>CARLOS AMAYA<br></h5><span style="font-size: 13px;">12 de enero</span>
+                                </div>
+                            </div>
+                            <div id="carouselExampleIndicators-1" class="carousel slide" data-bs-ride="carousel" style="margin-top: 20px;margin-bottom: 10px;">
+                                <div class="carousel-indicators"><button class="btn btn-primary active" type="button" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" data-bs-target="#carouselExampleIndicators"></button><button class="btn btn-primary" type="button" data-bs-slide-to="1" aria-label="Slide 2" data-bs-target="#carouselExampleIndicators"></button><button class="btn btn-primary" type="button" data-bs-slide-to="2" aria-label="Slide 3" data-bs-target="#carouselExampleIndicators"></button></div>
+                            </div>
+                            <div class="conten-star"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="550" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="600" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="650" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="700" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="750" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png" style="padding: 0px;margin: 3px;"></div>
+                            <div style="padding-left: 10px;padding-right: 5px;">
+                                <h4>comida deliciosa</h4>
+                                <p style="font-size: 23px;">La comida muy rica&nbsp; y un lugar muy amigable con sus invitados&nbsp;</p>
+                            </div><a class="text-decoration-none" href="#"></a>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled"><span class="page-link">Anterior</span></li>
+                                <li class="page-item active rounded-3" aria-current="page"><a class="page-link border-0" href="#" target="_parent" style="background: var(--bs-blue);">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><span class="page-link">Siguiente</span></li>
+                            </ul>
+                        </nav>
+                    </div><!-- End: reviews -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Start: Footer Dark -->
+        <footer id="footer" class="footer-dark">
+            <div class="container" id="container-footer">
+                <div class="row">
+                    <!-- Start: Services -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 class="text-capitalize heading_footer">Servicios</h3>
+                        <ul>
+                            <li><a href="restaurant.html">Restaurantes</a></li>
+                            <li><a href="top.html">Top Revie</a></li>
+                            <li></li>
+                        </ul>
+                    </div><!-- End: Services -->
+                    <!-- Start: About -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 class="text-capitalize heading_footer">Acerca</h3>
+                        <ul>
+                            <li><a href="aboutus.html">Quienes somos</a></li>
+                            <li><a href="#">Mapa del sitio</a></li>
+                            <li></li>
+                        </ul>
+                    </div><!-- End: About -->
+                    <!-- Start: Footer Text -->
+                    <div class="col-md-6 item text">
+                        <div class="d-inline-flex flex-row flex-grow-1 div_logo_footer_interno"><img class="image-revie-footer" src="assets/img/LogoEG/Proyecto%20Ingenieria%20web%20-%20EGS%20S.png">
+                            <h4 class="display-6 text-capitalize heading_footer">revie</h4>
+                        </div>
+                        <p>Nosotros te ayudaremos en la dicifil desicion de encontrar un buen restaturante, con la mejor comida de tu localidad</p>
+                    </div><!-- End: Footer Text -->
+                    <!-- Start: Social Icons -->
+                    <div class="col item social"><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div><!-- End: Social Icons -->
+                </div><!-- Start: Copyright -->
+                <p class="copyright">Revie © 2021</p><!-- End: Copyright -->
+            </div>
+        </footer><!-- End: Footer Dark -->
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/java.js"></script>
+    <script src="assets/js/vali-contra.js"></script>
+    <script src="assets/js/validation-form.js"></script>
+</body>
+
+</html>

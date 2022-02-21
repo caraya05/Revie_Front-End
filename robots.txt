@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /reviewer/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://www.revie.com/map_site.html

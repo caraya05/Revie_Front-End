@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Revie | Reseñas de restaurantes</title>
+    <meta name="theme-color" content="#008cff">
+    <meta property="og:image" content="https://www.revie.com/assets/img/LogoCLSB/Proyecto Ingenieria web redes.png">
+    <meta name="description" content="En revie encontraras los mejores restaurantes de tu localidad, tendrás muchas categorías para elegir y el que mas te gusta, podrás contribuir a dándonos tu opinión para que mas personas te conozcan y conozcan tu experiencia.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="24x24" href="assets/img/LogoCLSB/Proyecto%20Ingenieria%20web%20-%20CLS%20XS.png">
+    <link rel="icon" type="image/png" sizes="2569x1174" href="assets/img/LogoCLSB/Proyecto%20Ingenieria%20web%20redes.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/LogoCLSB/Proyecto%20Ingenieria%20web%20-%20CLS%20L.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/lux/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/register.compiled.css">
+    <link rel="stylesheet" href="assets/css/restaurant.compiled.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/windows_emer.css">
+</head>
+
+<body>
+    <header>
+        <!-- Start: windows_emer -->
+        <div id="elegir" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" value="Recuperar contraseña">Elegir usuario</h5><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Elige entre ser reseñador o restaurante</h6>
+                    </div>
+                    <div class="conten_register"><a href="register_reviewer.html"><button class="btn btn-primary buton buton_re" type="button"><i class="material-icons icon_register">person</i></button></a><a href="register_restaurant.html"><button class="btn btn-primary buton buton_re" type="button"><i class="material-icons icon_register">restaurant</i></button></a></div>
+                </div>
+            </div>
+        </div><!-- End: windows_emer -->
+        <!-- Start: Navigation with Button -->
+        <nav class="navbar navbar-light navbar-expand-xl navigation-clean-button fixed-top bg-light py-1 border-0">
+            <div class="container"><a class="navbar-brand conten_nav" href="index.html"><img class="logo_nav" src="assets/img/LogoCLSB/logo-nav.png"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-2">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link nav_web" href="index.html"><span class="span_nav">Inicio</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="restaurant.html"><span class="span_nav">Restaurantes</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="top.html"><span class="span_nav">Top revie</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="span_nav">Quienes Somos</span></a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" target="_parent">cuenta<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person ms-2 me-2" style="transform: translate(0px) scale(1.70);">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
+                                </svg></a>
+                            <div class="dropdown-menu"><a class="dropdown-item span_nav" href="#" style="font-size: 80%;">PERFIL</a><a class="dropdown-item span_nav" href="#" style="font-size: 80%;">CERRAR SESION</a></div>
+                        </li>
+                    </ul><span class="navbar-text actions"> <a class="stretched-link buton-outline login" href="login.html" role="button"><span class="link">Iniciar sesion</span></a><button class="btn btn-primary buton" type="button" data-bs-toggle="modal" data-bs-target="#elegir">Registrarse</button></span>
+                </div>
+            </div>
+        </nav><!-- End: Navigation with Button -->
+    </header>
+    <section class="pt-5 mt-5">
+        <div class="filter-principal border border-1 rounded-3">
+            <form class="d-flex filter-conten" method="get" target="_self" enctype="application/x-www-form-urlencoded">
+                <div class="d-flex flex-row conten-search"><input class="form-control form-control-sm form-control me-2 filter-search w-100" type="search" aria-label="Search" placeholder="La cofradia ..."></div>
+                <div class="text-end conten-filter"><select class="form-select form-select-sm me-2 filter-select">
+                        <optgroup label="Categoria">
+                            <option value="1">Bar</option>
+                            <option value="2">Mariscos</option>
+                            <option value="3" selected="">Internacional</option>
+                            <option value="4">Callejera</option>
+                            <option value="5">Mexicana</option>
+                        </optgroup>
+                    </select><select class="form-select form-select-sm me-2 filter-select">
+                        <optgroup label="Puntuacion">
+                            <option value="12">1</option>
+                            <option value="22">2</option>
+                            <option value="32">3</option>
+                            <option value="42">4</option>
+                            <option value="52" selected="">5</option>
+                        </optgroup>
+                    </select><button class="btn btn-primary buton" type="submit">Buscar</button></div>
+            </form>
+        </div>
+        <article class="d-flex flex-column" style="border-color: #86c1ff;">
+            <!-- Start: Card-figo-class-medal -->
+            <div id="Card-figo-1" class="conten_image_card border border-1 rounded-3">
+                <!-- Start: Modal-XL -->
+                <div id="ModalXL" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                            <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/2020-10-23.jpg"></div>
+                        </div>
+                    </div>
+                </div><!-- End: Modal-XL -->
+                <!-- Start: Modal-L -->
+                <div id="ModalL" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                            <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/reservas-3152973034-en.jpg"></div>
+                        </div>
+                    </div>
+                    <div class="modal-dialog modal">
+                        <div class="modal-content">
+                            <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                            <div class="modal-body"><img src="assets/img/Restaurant/reservas-3152973034-en.jpg"></div>
+                        </div>
+                    </div>
+                </div><!-- End: Modal-L -->
+                <!-- Start: Modal-M -->
+                <div id="ModalM" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                            <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/reserva-tu-cena-romantica.jpg"></div>
+                        </div>
+                    </div>
+                </div><!-- End: Modal-M -->
+                <!-- Start: Modal-S1 -->
+                <div id="ModalS1" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                            <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/cofradia-campestre-2_10_109620.jpeg"></div>
+                        </div>
+                    </div>
+                </div><!-- End: Modal-S1 -->
+                <!-- Start: Modal-S2 -->
+                <div id="ModalS2" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                            <div class="modal-header"><button class="btn btn-primary buton" type="button" data-bs-dismiss="modal" aria-label="close">X</button></div>
+                            <div class="modal-body"><img class="img-fluid" src="assets/img/Restaurant/la-cofradia-mediterranea.jpg"></div>
+                        </div>
+                    </div>
+                </div><!-- End: Modal-S2 -->
+                <div class="conten_image_xl">
+                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="50" data-aos-once="true" class="image_xl" data-bs-toggle="modal" data-bs-target="#ModalXL">
+                        <figure class="figure"><img class="figure-img rounded-1" src="assets/img/Restaurant/2020-10-23.jpg"></figure>
+                    </div>
+                    <div class="conten_image_l">
+                        <div class="align-items-center image_l" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150" data-aos-once="true" data-bs-toggle="modal" data-bs-target="#ModalL">
+                            <figure class="figure"><img class="figure-img rounded-1" src="assets/img/Restaurant/reservas-3152973034-en.jpg"></figure>
+                        </div>
+                        <div class="conten_image_m">
+                            <div class="conten_image_s">
+                                <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="450" data-aos-once="true" class="image_s_d" data-bs-toggle="modal" data-bs-target="#ModalS2">
+                                    <figure class="figure"><img class="figure-img rounded-1" src="assets/img/Restaurant/la-cofradia-mediterranea.jpg"></figure>
+                                </div>
+                                <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="350" data-aos-once="true" class="image_s_i" data-bs-toggle="modal" data-bs-target="#ModalS1">
+                                    <figure class="figure"><img class="figure-img rounded-1" src="assets/img/Restaurant/cofradia-campestre-2_10_109620.jpeg"></figure>
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" data-aos-once="true" class="image_m" data-bs-toggle="modal" data-bs-target="#ModalM">
+                                <figure class="figure"><img class="figure-img rounded-1" src="assets/img/Restaurant/reserva-tu-cena-romantica.jpg"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div><a class="text-decoration-none" href="profile_restaurant.html">
+                    <div class="conten_info">
+                        <h4 data-aos="zoom-in" data-aos-duration="450" data-aos-delay="550" data-aos-once="true" class="heading_card text-decoration-none" style="font-weight: bold;text-align: left;">1. La cofradia metiterranea</h4>
+                        <div class="conten_star"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="550" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="600" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="650" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="700" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png" style="padding: 0px;margin: 3px;"><img data-aos="zoom-out" data-aos-duration="450" data-aos-delay="750" data-aos-once="true" class="image_star_card" src="assets/img/Stars/Revie%20-%20starts%20none%20-xs.png" style="padding: 0px;margin: 3px;"></div>
+                        <div data-aos="zoom-in" data-aos-duration="450" data-aos-delay="550" data-aos-once="true" class="acount_state_div"><span id="acount_revie-1" class="text-decoration-none" style="margin: 7px;">50 Reseñas</span><span id="state_OC-1" class="state_OC" style="margin: 7px;">Cerrado</span></div>
+                        <p data-aos="zoom-in" data-aos-duration="450" data-aos-delay="550" data-aos-once="true" class="type_restaurant">Mariscos, Internacional, Bar</p>
+                        <div data-aos="zoom-in" data-aos-duration="450" data-aos-delay="550" data-aos-once="true" class="loca_phone_div"><a class="phone" href="#"><i class="fas fa-phone-alt"></i><span class="number_phone">3057119562</span></a><a class="location" href="#"><i class="fas fa-map-marker-alt"></i><span class="reference_location">La octava de la esperanza</span></a></div>
+                    </div>
+                </a>
+            </div><!-- End: Card-figo-class-medal -->
+        </article>
+        <nav aria-label="Page navigation" style="max-width: 303px;margin: auto;">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><span class="page-link">Anterior</span></li>
+                <li class="page-item active rounded-3" aria-current="page"><a class="page-link border-0" href="#" target="_parent" style="background: var(--bs-blue);">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><span class="page-link">Siguiente</span></li>
+            </ul>
+        </nav>
+    </section>
+    <footer>
+        <!-- Start: Footer Dark -->
+        <footer id="footer" class="footer-dark">
+            <div class="container" id="container-footer">
+                <div class="row">
+                    <!-- Start: Services -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 class="text-capitalize heading_footer">Servicios</h3>
+                        <ul>
+                            <li><a href="restaurant.html">Restaurantes</a></li>
+                            <li><a href="top.html">Top Revie</a></li>
+                            <li></li>
+                        </ul>
+                    </div><!-- End: Services -->
+                    <!-- Start: About -->
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 class="text-capitalize heading_footer">Acerca</h3>
+                        <ul>
+                            <li><a href="aboutus.html">Quienes somos</a></li>
+                            <li><a href="#">Mapa del sitio</a></li>
+                            <li></li>
+                        </ul>
+                    </div><!-- End: About -->
+                    <!-- Start: Footer Text -->
+                    <div class="col-md-6 item text">
+                        <div class="d-inline-flex flex-row flex-grow-1 div_logo_footer_interno"><img class="image-revie-footer" src="assets/img/LogoEG/Proyecto%20Ingenieria%20web%20-%20EGS%20S.png">
+                            <h4 class="display-6 text-capitalize heading_footer">revie</h4>
+                        </div>
+                        <p>Nosotros te ayudaremos en la dicifil desicion de encontrar un buen restaturante, con la mejor comida de tu localidad</p>
+                    </div><!-- End: Footer Text -->
+                    <!-- Start: Social Icons -->
+                    <div class="col item social"><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div><!-- End: Social Icons -->
+                </div><!-- Start: Copyright -->
+                <p class="copyright">Revie © 2021</p><!-- End: Copyright -->
+            </div>
+        </footer><!-- End: Footer Dark -->
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/java.js"></script>
+</body>
+
+</html>
